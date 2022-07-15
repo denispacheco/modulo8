@@ -1,0 +1,21 @@
+{
+  "name": "modulo8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denispacheco/modulo8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denispacheco/modulo8/issues"
+  },
+  "homepage": "https://github.com/denispacheco/modulo8#readme"
+}
