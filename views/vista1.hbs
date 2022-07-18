@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1>
+    <p>{{{html}}}</p>
+    {{#if escribir}}
+        <p>mostrando texto</p>
+    {{/if}}
+    {{#if esCaro}}
+        <p>el producto es muy caro</p>
+    {{else}}
+        <p>el producto es barato</p>
+    {{/if}}
+    <h4>lista de frutas</h4>
+    <ul>
+    {{#each frutas}}
+        <li>{{@index}}--{{this}}</li>
+        {{else}}
+        <p>No se encontraron elementos</p>  
+    {{/each}}
+    </ul>
+
+    <table>
+        <tr>
+            <th>Marca</th>
+            <th>Patente</th>
+        </tr>
+        {{#each autos }}
+            <tr>
+                <td>{{@key}}</td>
+                <td>{{this}}</td>
+            </tr>
+        {{/each}}
+    </table>
+
+    {{#imagen}}
+    {{foto}}
+    {{/imagen}}
+
+
+</body>
+</html>
