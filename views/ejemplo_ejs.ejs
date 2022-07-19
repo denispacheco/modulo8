@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- insertar el partial header.ejs -->
+    <%- include ("./partials/header",{subtitulo:"hola desde vista"}) %> 
+
+
+    <h1>Hola desde una vista EJS</h1>
+    <p>dato enviado desde js: <%= texto %>   </p>
+
+    <h3>render condicional (if)</h3>
+    <% if (precio>500) { %>
+        <p style="color: red;">El producto está caro</p>
+    <% } else { %>
+        <p style="color: green;">El producto está barato</p> 
+    <% } %>
+
+    <h3>iteración (for)</h3>
+    <ul>
+        <% for(i=0; i<alimentos.length; i++) {%>
+            <li><%= alimentos[i] %></li>
+         <% } %> 
+    </ul>
+</body>
+</html>
