@@ -29,15 +29,6 @@ app.get('/', (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
 //const datos=["pan","mantequilla","mermelada","cecina"];
 
 app.get('/partial2', (req, res) => {
